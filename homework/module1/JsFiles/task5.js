@@ -9,6 +9,9 @@ const jamaika = "Ямайку";
 const china = "Китай";
 const india = "Индию";
 let country = prompt("Введите название страны");
+if (country === null) {
+  alert("Отменено пользователем!")
+};
 switch (country.toLowerCase()) {
   case "китай":
     alert(`Доставка в ${china} будет стоить ${chinaCost} кредитов`);

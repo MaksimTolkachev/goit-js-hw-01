@@ -278,3 +278,97 @@
 //       return res = num1 + num2; 
 //       goSum(5,3);
 // } ;
+
+
+
+
+
+// (function start() {
+//      var =
+//       a = b = 4;
+// })();
+// console.log(a);
+// console.log(b)
+
+
+                                                            //   СПОСОБЫ ВЫЗВАТЬ ФУНКЦИЮ
+
+
+// function func1(a, b) {
+//       return a + b
+// };
+
+
+// const func2 = function func1(a, b) {
+//       return a + b
+// };
+
+
+// const func3 = (a, b) => true ? a + b : a - b;
+// console.log(func3(5, 3));
+
+
+
+
+// const func = function(a, b) {
+//       // if (a !== undefined && b !== undefined) {         
+//       console.log(a, 'a');
+//       console.log(b, 'b');
+//       return a + b
+// } 
+// return 'no data';
+// };
+
+// console.log(func());
+
+
+
+
+// function calcSum (a, b, func) {
+//       console.log('run function')
+//       const sum = a + b;
+//       func(sum);
+// }
+
+// function getConsole(param){
+//       console.log('run callback')
+//       console.log(param)
+// }
+
+// calcSum(2, 3, getConsole)
+
+
+
+
+// console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].filter(el => el % 2 === 0 ));
+
+
+
+// function even(el) {
+//       return el % 2 === 0;
+// }
+
+
+// function odd(el) {
+//       return el % 2 !== 0;
+// }
+
+
+// console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].filter(even));
+// console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].filter(odd));
+
+
+
+
+function sum() {
+      console.log(arguments);
+      const args = Array.from(arguments)
+      console.log(Array.isArray(args));
+      let sum = 0;
+      for (const el of args) {
+            sum += el;
+      }
+      return sum;
+}
+
+console.log(sum(1, 2, 3, 4));
