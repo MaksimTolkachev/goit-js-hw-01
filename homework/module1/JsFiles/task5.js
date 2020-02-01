@@ -8,10 +8,10 @@ const australia = "Австралию";
 const jamaika = "Ямайку";
 const china = "Китай";
 const india = "Индию";
-let country = prompt("Введите название страны");
+let country = prompt("Введите название страны"); 
 if (country === null) {
   alert("Отменено пользователем!")
-};
+} else if(country !== null) {
 switch (country.toLowerCase()) {
   case "китай":
     alert(`Доставка в ${china} будет стоить ${chinaCost} кредитов`);
@@ -30,4 +30,5 @@ switch (country.toLowerCase()) {
     break;
   default:
     alert(`В вашей стране доставка недоступна`);
+    }
 }
