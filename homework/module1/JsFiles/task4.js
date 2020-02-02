@@ -5,7 +5,7 @@ if (howManyDroids === null) {
   alert("Отменено пользователем!");
 } else if (howManyDroids !== null) {
   const totalPrice = howManyDroids * pricePerDroid;
-  if (totalPrice < credits) {
+  if (totalPrice <= credits) {
     credits -= totalPrice;
     alert(
       `Вы купили ${howManyDroids} дроидов, на счету осталось ${credits} кредитов`
